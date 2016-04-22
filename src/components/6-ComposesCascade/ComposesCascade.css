@@ -1,0 +1,12 @@
+.ComposesCascade {
+  background: #eee;
+}
+
+.ComposesCascade .ComposesCascadeChild1 strong {
+  background: blue;
+}
+
+.ComposesCascadeChild2 {
+  composes: ComposesCascade ComposesCascadeChild1 strong;
+  color: #fff;
+}

@@ -3,6 +3,7 @@ import styles from './App.css';
 import React, { Component } from 'react';
 
 import Logo from './0-Logo/Logo';
+import ComposesCascadeDemo from './6-ComposesCascade/ComposesCascadeDemo';
 import ScopedSelectorsDemo from './1-ScopedSelectors/ScopedSelectorsDemo';
 import GlobalSelectorsDemo from './2-GlobalSelectors/GlobalSelectorsDemo';
 import ClassCompositionDemo from './3-ClassComposition/ClassCompositionDemo';
@@ -18,6 +19,9 @@ export default class App extends Component {
         <h1>CSS Modules Webpack Demo</h1>
 
         <hr className={styles.hr} />
+
+        <h2>Using compose css-modules</h2>
+        <ComposesCascadeDemo />
 
         <h2>Scoped Selectors</h2>
         <p>In CSS Modules, selectors are scoped by default.</p>
